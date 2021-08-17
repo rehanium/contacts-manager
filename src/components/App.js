@@ -7,12 +7,12 @@ import ContactList from "./ContactList";
 function App() {
   const contacts = [
     {
-      id: "1",
+      "id": "1",
       "name": "Rehan",
       "email": "m.rehan1016@gmail.com",
     },
     {
-      id: "2",
+      "id": "2",
       "name": "Ajay",
       "email": "ajay12@gmail.com",
     },
@@ -21,7 +21,7 @@ function App() {
     <div className="ui container">
       <Header/>
       <AddContact />
-      <ContactList />
+      <ContactList contacts={contacts} />
     </div>
   );
 };
